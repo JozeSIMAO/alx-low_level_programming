@@ -14,7 +14,7 @@ for (lc = 'a'; lc <= 'z'; lc++)
 putchar(lc);
 }
 for (lb = 'A'; lb <= 'Z'; lb++)
-}
+{
 putchar(lb);
 }
 putchar('\n');
