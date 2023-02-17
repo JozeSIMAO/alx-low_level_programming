@@ -16,6 +16,7 @@ while (i < 26)
 {
 putchar(alphas[i]);
 i++;
+
 }
 
 return (0);
