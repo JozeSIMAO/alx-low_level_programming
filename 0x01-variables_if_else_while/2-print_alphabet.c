@@ -10,14 +10,14 @@
  */
 int main(void)
 {
-char alphas[] = "abcdefghijklmnopqrstuvwxyz";
+char al = 'a';
 int i = 0;
-while (i < 26)
+while (al <= 'z')
 {
-putchar(alphas[i]);
+putchar(al);
 i++;
-
 }
+putchar('\n');
 
 return (0);
 }
