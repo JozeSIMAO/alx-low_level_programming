@@ -15,7 +15,7 @@ int i = 0;
 while (i < 26)
 {
 putchar(alphas[i]);
-i++
+i++;
 }
 
 return (0);
