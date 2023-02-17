@@ -10,12 +10,10 @@
  */
 int main(void)
 {
-char al = 'a';
-int i = 0;
-while (al <= 'z')
+char lc;
+while (lc = 'a'; lc <= 'z'; lc++)
 {
-putchar(al);
-i++;
+putchar(lc);
 }
 putchar('\n');
 
