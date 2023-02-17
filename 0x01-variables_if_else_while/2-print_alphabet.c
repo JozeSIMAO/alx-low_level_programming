@@ -11,10 +11,11 @@
 int main(void)
 {
 char alphas[] = "abcdefghijklmnopqrstuvwxyz";
-
-for (int i = 0; i < 26; i++)
+int i = 0;
+while (i < 26)
 {
 putchar(alphas[i]);
+i++
 }
 
 return (0);
