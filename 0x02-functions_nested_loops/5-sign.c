@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print-sign - prints sign of a number
+ * Description: 'gives a sign to a number'
  * @n : is to be checked
  * Return: Always (0) success
  */
