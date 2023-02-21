@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - lowercase only
+ * description: 'lowercase only'
  * Return: Always (0) success
  */
 int _islower(int c)
