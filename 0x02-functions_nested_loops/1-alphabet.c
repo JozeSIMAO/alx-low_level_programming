@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * alpha - function
+ * print_alphabet - function
  *
  * Description: 'contains the code for alphabets'
  *
  * Return: Always 0 (Success)
  */
-int alpha(void)
+print_alphabet(void)
 {
 char c;
 for (c = 'a'; c <= 'z'; c++)
@@ -18,13 +19,13 @@ putchar(c);
 /**
  * main - Entry point
  *
- * Description: 'contains the alpha function'
+ * Description: 'contains the alphabet function'
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-alpha();
+print_alphabet();
 
 return (0);
 }
