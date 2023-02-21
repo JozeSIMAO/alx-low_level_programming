@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - lowercase only
- * c: 'is to be checked'
+ * @c: 'is to be checked'
  * Return: Always (0) success
  */
 int _islower(int c)
