@@ -4,7 +4,7 @@
  * @c: 'is to be checked'
  * Return: Always (0) success
  */
-int _islower(int c)
+int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
 return (1);
