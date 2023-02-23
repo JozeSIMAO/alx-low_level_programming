@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - lowercase only
+ * _isupper - uppercase only
  * @c: 'is to be checked'
  * Return: Always (0) success
  */
