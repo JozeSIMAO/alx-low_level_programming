@@ -1,22 +1,27 @@
 #include "main.h"
 
 /**
- * print_square - prints a square
+ * print_triangle - prints a triangle
  * @size: is the size of the square
  * Return: Always (0) success
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
-int i;
-int j;
+int rowno;
+int space;
+int symbol;
 if (size <= 0)
-_putchar('\n');
+putchar('\n');
 else
 {
-for (i = 0; i <= size; i++)
+for (rowno = 1; rowno <= size; rowno++)
 {
-for (j = 0; j < i; j++)
+for (space = 1; space <= size - rowno ; space++)
+{
+_putchar(' ');
+}
+for (symbol = 1; symbol <= rowno; symbol++)
 {
 _putchar('#');
 }
