@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: is the size of the square
+ * @size: is the size of the triangle
  * Return: Always (0) success
  */
 
@@ -12,7 +12,7 @@ int rowno;
 int space;
 int symbol;
 if (size <= 0)
-putchar('\n');
+_putchar('\n');
 else
 {
 for (rowno = 1; rowno <= size; rowno++)
