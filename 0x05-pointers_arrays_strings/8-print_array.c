@@ -4,6 +4,7 @@
 /**
  * print_array - prints n elements of an array
  * @n : is the elements of array
+ * @a : is a pointer to the array
  * Return : Always (0) success
  */
 
