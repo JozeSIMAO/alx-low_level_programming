@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * string_toupper - changes letters to uppercase
- * @str: is the string
+ * @str: is a pointer
  *
- * Return: success
+ * Return: str
  */
 
 char *string_toupper(char *str)
@@ -15,8 +15,8 @@ char *string_toupper(char *str)
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
-			i++;
 		}
+		i++;
 	}
 	return (str);
 }
