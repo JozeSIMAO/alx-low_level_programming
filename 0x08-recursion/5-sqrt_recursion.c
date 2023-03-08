@@ -1,10 +1,20 @@
 #include "main.h"
 /**
- * square - squares
- * int _sqrt_recursion - returns natural square root a numb
+ * _sqrt_recursion - returns natural square root a numb
  * @n: input
- * @val: input
- * Return: Always (0) success
+ * Return: int n
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (square(n, 1));
+}
+
+/**
+ * square - find square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
  */
 
 int square(int n, int val)
@@ -21,9 +31,4 @@ int square(int n, int val)
 	{
 		return (-1);
 	}
-}
-
-int _sqrt_recursion(int n)
-{
-	return (square(n, 1));
 }
