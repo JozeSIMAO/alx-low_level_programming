@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * square - squares
+ * int _sqrt_recursion - returns natural square root a numb
  * @n: input
  * @val: input
  * Return: Always (0) success
@@ -21,12 +22,6 @@ int square(int n, int val)
 		return (-1);
 	}
 }
-
-/**
- * int _sqrt_recursion - returns natural square root a numb
- * @n: is an input
- * Return: Always (0) success
- */
 
 int _sqrt_recursion(int n)
 {
