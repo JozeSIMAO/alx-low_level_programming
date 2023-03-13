@@ -1,20 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _str_concat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * Return: pointer
+ * str_concat - concatenates two strings
+ * @s1: string
+ * @s2: string
+ * Return: s
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
-	int l = 0;
-	int m = 0;
-	char *s;
+	int i = 0, int j = 0, int k = 0, int l = 0, int m = 0, char *s;
 
 	if (s1 == NULL)
 	{
@@ -24,7 +18,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
 	while (s1[i] != '\0')
 	{
 		i++;
@@ -33,11 +26,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		j++;
 	}
-
 	k = i + j;
-
 	s = malloc(sizeof(*s) * (k + 1));
-
 	if (s == 0)
 	{
 		return (NULL);
