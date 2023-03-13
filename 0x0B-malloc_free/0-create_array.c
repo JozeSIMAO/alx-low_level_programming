@@ -17,19 +17,20 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else if (j > 0)
-	{
+
 		arr = malloc(sizeof(*arr) * j);
 
 		if (arr == 0)
 		{
 			return (NULL);
 		}
+		else
+		{
 		while (i < j)
 		{
 			arr[i] = c;
 			i++;
 		}
 		return (arr);
-	}
+		}
 }
