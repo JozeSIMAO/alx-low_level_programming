@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * suum_listint - returns sum of all the data(n) in a linked list
+ * sum_listint - returns sum of all the data(n) in a linked list
  * @head: head node
  * Return: sum
  */
