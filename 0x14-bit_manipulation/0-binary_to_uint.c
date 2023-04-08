@@ -25,15 +25,15 @@ int _strlen(const char *str)
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int len = _strlen(b);
-	unsigned int baseVal = 1;
-	unsigned int total = 0;
-
 	if (!b)
 	{
 		return (0);
 	}
+
+	int i;
+	unsigned int len = _strlen(b);
+	unsigned int baseVal = 1;
+	unsigned int total = 0;
 
 	for (i = len - 1; i >= 0; i--)
 	{
