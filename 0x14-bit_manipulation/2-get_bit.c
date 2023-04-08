@@ -8,11 +8,15 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int *binary = malloc(sizeof(int) * 32);
+	unsigned long int *binary = malloc(sizeof(binary) * 32);
 	int indx = 0;
 
 	if (binary == NULL)
 		return (-1);
+	if (index >= sizeof(binary) * 8)
+	{
+		return (-1);
+	}
 
 	while (n > 0)
 	{
