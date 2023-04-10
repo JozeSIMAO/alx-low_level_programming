@@ -41,11 +41,12 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	written = write(file, text_content, _strlen(text_content));
 
-	if (written != _strlen(text_content))
+	if (file == -1 || written == -1)
 	{
 		return (-1);
 	}
 
 	close(file);
+
 	return (1);
 }
