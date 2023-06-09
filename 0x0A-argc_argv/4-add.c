@@ -19,18 +19,17 @@ int main(int argc, char **argv)
 	}
 	while (argv[i])
 	{
-		 k = strtol(argv[i], &flag, 10);
-
-		 if (*flag)
-		 {
-			 printf("Error\n");
-			 return (1);
-		 }
-		 else
-		 {
-			 sum += k;
-		 }
-		 i++;
+		k = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			sum += k;
+		}
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
