@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - function
+ * @argc: int number of commandline arguments
+ * @argv: array of commandline arguments
  * Return: 0
  */
 
