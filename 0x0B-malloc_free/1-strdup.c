@@ -34,8 +34,8 @@ char *_strdup(char *str)
 			newStr[j] = str[j];
 			j++;
 		}
-	}
-	newStr[i] = '\0';
+		newStr[j] = '\0';
 
-	return (newStr);
+		return (newStr);
+	}
 }
