@@ -23,7 +23,7 @@ unsigned int str_len(char *str)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len = str_len(s1) + str_len(s2), i = 0, j = 0;
+	unsigned int len1 = str_len(s1), i = 0, j = 0;
 	char *str;
 	unsigned int len2 = str_len(s2);
 
@@ -32,44 +32,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	str = malloc(sizeof(*str) * (len + 1));
-
-	if (str == NULL)
+	if (n < len2)
 	{
-		return (NULL);
+		str = malloc(sizeof(*str) * (len1 + n + 1));
 	}
 	else
 	{
-		if (n < str_len(s2))
-		{
-			while (i < str_len(s1))
-			{
-				str[i] = s1[i];
-				i++;
-			}
-			while (n > j)
-			{
-				str[i] = s2[j];
-				i++;
-				j++;
-			}
-		}
-		else if (n >= str_len(s2))
-		{
-			while (i < str_len(s1))
-			{
-				str[i] = s1[i];
-				i++;
-			}
-			while (len2 == str_len(s2))
-			{
-				str[i] = s2[j];
-				i++;
-				j++;
-				len2--;
-			}
-		}
+		str = malloc(sizeof(*str) * (len1 + len2 + 1));
 	}
+	if (str == NULL)
+		return (NULL);
+	while (i < len1)
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	while (n < len2 && i < (len1 + n))
+		str[i++] = s2[j++];
+	while (n >= len2 && i < (len1 + len2))
+		str[i++] = s2[j++];
 	str[i] = '\0';
 	return (str);
 }
