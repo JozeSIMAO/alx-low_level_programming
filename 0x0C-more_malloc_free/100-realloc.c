@@ -1,5 +1,26 @@
 #include "main.h"
 /**
+ * _memcpy - copies memory
+ * @dest: to copy to
+ * @src: to copy from
+ * @n: number of bytes
+ * Return: void
+ */
+
+void *_memcpy(void *dest, const void *src, size_t n)
+{
+	unsigned char *d = (unsigned char *)dest;
+	const unsigned char *s = (const unsigned char *)src;
+	size_t r = 0;
+
+	for (; r < n; ++r)
+	{
+		d[r] = s[r];
+	}
+
+	return (dest);
+}
+/**
  * _realloc - reallocates a memory block using malloc and free
  * @ptr: is a pointer to previously allocated memory
  * @old_size: is the size in bytes
