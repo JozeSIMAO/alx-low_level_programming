@@ -5,6 +5,8 @@
 /**
  * main - function
  *
+ * @argc: number of elements in array
+ * @argv: array of commandline arguments
  * Return: int
  */
 
