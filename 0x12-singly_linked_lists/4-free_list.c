@@ -3,7 +3,6 @@
 /**
  * free_list - frees a linked list
  * @head: head node
- * 
  * Return: void
  */
 
