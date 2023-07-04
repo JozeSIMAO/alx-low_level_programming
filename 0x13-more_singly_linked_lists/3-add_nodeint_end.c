@@ -4,6 +4,8 @@
  * add_nodeint_end - adds a node at the end of a listint_t list
  * @head: pointer to head node
  * @n: variable of new node
+ *
+ * Return: a pointer
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
