@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_dnoteint_at_index - returns nth node of a dlistint_t linked list
+ * get_dnodeint_at_index - returns nth node of a dlistint_t linked list
  * @head: is pointer to head node
  * @index: is index of pointer to find
  * Return: pointer to node
