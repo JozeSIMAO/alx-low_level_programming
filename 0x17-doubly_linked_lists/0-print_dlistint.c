@@ -7,11 +7,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t counter = 0;
+	dlistint_t *temp = h
 
-	while (h)
+	while (temp)
 	{
 		counter++;
-		h = h->next;
+		temp = temp->next;
 	}
 
 	return (counter);
