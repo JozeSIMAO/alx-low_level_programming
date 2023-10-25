@@ -4,7 +4,7 @@
 
 def island_perimeter(grid):
     """Returns the perimeter of a grid
-    
+
     Args:
         grid (list): list of integers (island)
     Returns: The perimeter of the island
@@ -12,7 +12,7 @@ def island_perimeter(grid):
     length = len(grid)
     width = len(grid[0])
     perimeter = 0
-    
+
     for i in range(length):
         for j in range(width):
             if grid[i][j] == 1:
